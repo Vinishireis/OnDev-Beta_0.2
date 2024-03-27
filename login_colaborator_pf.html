@@ -31,9 +31,9 @@
   <body>
     <div class="container">
       <div class="forms-container">
-        <div class="signin-signup-colaborator">
+        <div class="signin-signup">
           <form action="#" class="sign-in-form">
-            <h2 class="title">Colaborador Jurídico</h2>
+            <h2 class="title">Colaborador Físico</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
               <input type="text" placeholder="Email" />
@@ -59,20 +59,39 @@
               </a>
             </div>
           </form>
-          <form action="#" class="sign-up-form">
+        </div>
+      </div>
+
+
+      <div class="container-colaborator">
+        <div class="forms-container-colaborator">
+          <div class="signin-signup-colaborator">
+            <form action="#" class="sign-up-form">
             <h2 class="title">Cadastre-se</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" name="Razao_social" placeholder="Razão social" id="Razao_social" required/>
+              <input type="text" name="Nome_completo" placeholder="Nome completo" id="Nome_completo" required/>
             </div>
             <div class="input-field">
                 <i class="fas fa-list-numeric"></i>
-                <input type="number" name="CNPJ" placeholder="CNPJ" id="CNPJ" required />
+                <input type="number" name="CPF" placeholder="CPF" id="CPF" required />
             </div>
             <div class="input-field">
               <i class="fas fa-calendar"></i>
-              <input type="text" name="Inscricao_estadual" placeholder="Inscrição estadual" id="Inscricao_estadual" required />
+              <input type="date" name="Data_Nasc" placeholder="Data de nascimento" id="Data_Nasc" required />
             </div>
+
+            <!--=============== SEXO ===============-->
+            <div class="input-field">
+              <i class="fas fa-transgender"></i>
+              <select name="genero" id="genero" required>
+                <option value="" disabled selected>Selecione o gênero</option>
+                <option value="feminino">Feminino</option>
+                <option value="masculino">Masculino</option>
+                <option value="outros">Outros</option>
+              </select>
+            </div>
+
             <div class="input-field">
                 <i class="fas fa-map-location"></i>
                 <input type="number" name="CEP" placeholder="CEP" id="CEP" required/>
@@ -123,6 +142,7 @@
             </div>
             <input type="submit" class="btn" value="Cadastrar" />
           </form>
+          </div>
         </div>
       </div>
 
