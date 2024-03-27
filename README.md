@@ -38,7 +38,7 @@ Se você deseja contribuir para os projetos da OnDev, siga estas etapas:
 
 Para mais informações sobre a OnDev, entre em contato conosco:
 
-- Site: [www.ondev.com.br](https://www.ondev.com.br)
+- Site: https://vinishireis.github.io/OnDev-Beta_0.2/
 - GitHub:[Github] https://github.com/Vinishireis
 
 ---
