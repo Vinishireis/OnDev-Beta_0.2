@@ -93,6 +93,7 @@ form.sign-up-form {
 
 form.sign-in-form {
   z-index: 2;
+  left: 70%;
 }
 
 .title {
