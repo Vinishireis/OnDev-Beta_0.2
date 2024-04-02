@@ -19,20 +19,54 @@ input {
   overflow: hidden;
 }
 
+.container-colaborator {
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+  min-height: 80vh; /* Reduzi a altura para 80vh para deixar espaço para a barra de rolagem */
+  overflow-y: auto; /* Alterado para 'auto' para mostrar a barra de rolagem apenas quando necessário */
+}
+
+
+.forms-container-colaborator {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  padding: 20px;
+  box-sizing: border-box; /* Garante que o padding não afete a largura e altura */
+}
+
+
 .forms-container {
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
+  overflow-y: hidden;
 }
+
 
 .signin-signup {
   position: absolute;
+  overflow-x: hidden;
   top: 50%;
   transform: translate(-50%, -50%);
   left: 75%;
-  width: 50%;
+  width: 20%;
+  transition: 1s 0.7s ease-in-out;
+  display: grid;
+  grid-template-columns: 1fr;
+  z-index: 5;
+}
+
+.signin-signup-colaborator {
+  position: relative;
+  overflow-x: hidden;
+  left: -15%; /* Valor negativo maior para mover mais para a esquerda */
   transition: 1s 0.7s ease-in-out;
   display: grid;
   grid-template-columns: 1fr;
@@ -55,6 +89,7 @@ form.sign-up-form {
   opacity: 0;
   z-index: 1;
 }
+
 
 form.sign-in-form {
   z-index: 2;
@@ -396,5 +431,57 @@ form.sign-in-form {
   .container.sign-up-mode:before {
     bottom: 28%;
     left: 50%;
+  }
+}
+
+.forms-container-colaborator {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+
+.forms-container-colaborator::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+
+@media (max-width: 870px) {
+  .container-colaborator {
+    overflow-y: auto;
+  }
+}
+
+
+
+/* Para versão mobile */
+@media (max-width: 767px) {
+  .signin-signup-colaborator {
+    position: relative;
+    overflow-x: hidden;
+    left: 0; /* Mantém o elemento à esquerda na versão mobile */
+    transition: 1s 0.7s ease-in-out;
+    display: grid;
+    grid-template-columns: 1fr;
+    z-index: 5;
+  }
+}
+/* Para versão desktop */
+.forms-container-colaborator {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.forms-container-colaborator::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+
+/* Para versão mobile */
+@media (max-width: 767px) {
+  .forms-container-colaborator {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+  }
+
+  .forms-container-colaborator::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge */
   }
 }

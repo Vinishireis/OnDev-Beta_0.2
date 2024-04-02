@@ -9,3 +9,14 @@ sign_up_btn.addEventListener("click", () => {
 sign_in_btn.addEventListener("click", () => {
   container.classList.remove("sign-up-mode");
 });
+
+window.addEventListener('resize', function() {
+  var screenWidth = window.innerWidth;
+  var signinSignupColaborator = document.querySelector('.signin-signup-colaborator');
+
+  if (screenWidth <= 768) {
+    signinSignupColaborator.style.overflowX = 'scroll';
+  } else {
+    signinSignupColaborator.style.overflowX = 'hidden';
+  }
+});

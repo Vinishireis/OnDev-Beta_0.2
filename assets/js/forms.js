@@ -210,3 +210,14 @@
 	app.init();
  
 }());
+
+window.addEventListener('resize', function() {
+	var screenWidth = window.innerWidth;
+	var signinSignupColaborator = document.querySelector('.signin-signup-colaborator');
+
+	if (screenWidth <= 768) {
+	  signinSignupColaborator.style.overflowX = 'scroll';
+	} else {
+	  signinSignupColaborator.style.overflowX = 'hidden';
+	}
+  });

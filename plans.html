@@ -168,75 +168,166 @@
                                 <h1>Nossos Planos</h1>
                             </div>
                         </header>
-                        <article class="card">
-                            <h2>Grátis</h2>
-                            <var><abbr>R$</abbr>0<small>/MÊS</small></var>
-                            <ul>
+                        <div class="pricing-container">
+                            <div class="pricing-switcher">
+                                <p class="fieldset">
+                                    <input type="radio" name="duration-1" value="monthly" id="monthly-1" checked>
+                                    <label for="monthly-1">Mensal</label>
+                                    <input type="radio" name="duration-1" value="yearly" id="yearly-1">
+                                    <label for="yearly-1">Ano</label>
+                                    <span class="switch"></span>
+                                </p>
+                            </div>
+                            <ul class="pricing-list bounce-invert">
                                 <li>
-                                    <img src="assets/fonts/check.svg" />
-                                    <p>10 solicitações de usuário</p>
+                                    <ul class="pricing-wrapper">
+                                        <li data-type="monthly" class="is-visible">
+                                            <header class="pricing-header">
+                                                <h2>On Basic</h2>
+                                                <div class="price">
+                                                    <span class="currency">R$</span>
+                                                    <span class="value">30</span>
+                                                    <span class="duration">Mês</span>
+                                                </div>
+                                            </header>
+                                            <div class="pricing-body">
+                                                <ul class="pricing-features">
+                                                    <li><em>Filtragem</em> Personalizada</li>
+                                                    <li><em>Agilidade</em> na Busca de Trabalho</li>
+                                                    <li><em>Colaboração </em> Remota Simplificada</li>
+                                                    <li>Suporte <em>24 Horas </em></li>
+                                                </ul>
+                                            </div>
+                                            <footer class="pricing-footer">
+                                                <a class="select" href="cart.html">Contratar</a>
+                                            </footer>
+                                        </li>
+                                        <li data-type="yearly" class="is-hidden">
+                                            <header class="pricing-header">
+                                                <h2>On Basic</h2>
+                                                <div class="price">
+                                                    <span class="currency">R$</span>
+                                                    <span class="value">90</span>
+                                                    <span class="duration">Ano</span>
+                                                </div>
+                                            </header>
+                                            <div class="pricing-body">
+                                                <ul class="pricing-features">
+                                                    <li><em>Filtragem</em> Personalizada</li>
+                                                    <li><em>Agilidade</em> na Busca de Trabalho</li>
+                                                    <li><em>Colaboração </em> Remota Simplificada</li>
+                                                    <li>Suporte <em>24 Horas </em></li>
+                                                </ul>
+                                            </div>
+                                            <footer class="pricing-footer">
+                                                <a class="select" href="cart.html">Contratar</a>
+                                            </footer>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="exclusive">
+                                    <ul class="pricing-wrapper">
+                                        <li data-type="monthly" class="is-visible">
+                                            <header class="pricing-header">
+                                                <h2>On Plus</h2>
+                                                <div class="price">
+                                                    <span class="currency">R$</span>
+                                                    <span class="value">80</span>
+                                                    <span class="duration">Mês</span>
+                                                </div>
+                                            </header>
+                                            <div class="pricing-body">
+                                                <ul class="pricing-features">
+                                                    <li><em>Filtragem</em> Personalizada</li>
+                                                    <li><em>Agilidade</em> na Busca de Trabalho</li>
+                                                    <li><em>Colaboração </em> Remota Simplificada</li>
+                                                    <li><em>Interface</em> Intuitiva</li>
+                                                    <li>Suporte <em>24 Horas </em></li>
+                                                </ul>
+                                            </div>
+                                            <footer class="pricing-footer">
+                                                <a class="select" href="cart.html">Contratar</a>
+                                            </footer>
+                                        </li>
+                                        <li data-type="yearly" class="is-hidden">
+                                            <header class="pricing-header">
+                                                <h2>On Plus</h2>
+                                                <div class="price">
+                                                    <span class="currency">R$</span>
+                                                    <span class="value">120</span>
+                                                    <span class="duration">Ano</span>
+                                                </div>
+                                            </header>
+                                            <div class="pricing-body">
+                                                <ul class="pricing-features">
+                                                    <li><em>Filtragem</em> Personalizada</li>
+                                                    <li><em>Agilidade</em> na Busca de Trabalho</li>
+                                                    <li><em>Colaboração </em> Remota Simplificada</li>
+                                                    <li><em>Interface</em> Intuitiva</li>
+                                                    <li>Suporte <em>24 Horas </em></li>
+                                                </ul>
+                                            </div>
+                                            <footer class="pricing-footer">
+                                                <a class="select" href="cart.html">Contratar</a>
+                                            </footer>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li>
-                                    <img src="assets/fonts/check.svg" />
-                                    <p>3 contas de design</p>
-                                </li>
-                                <li>
-                                    <img src="assets/fonts/check.svg" />
-                                    <p>Suporte 24/7</p>
+                                    <ul class="pricing-wrapper">
+                                        <li data-type="monthly" class="is-visible">
+                                            <header class="pricing-header">
+                                                <h2>On Black</h2>
+                                                <div class="price">
+                                                    <span class="currency">R$</span>
+                                                    <span class="value">90</span>
+                                                    <span class="duration">Mês</span>
+                                                </div>
+                                            </header>
+                                            <div class="pricing-body">
+                                                <ul class="pricing-features">
+                                                    <li><em>Filtragem</em> Personalizada</li>
+                                                    <li><em>Variedade</em> de Projetos</li>
+                                                    <li><em>Oportunidade</em> para Freelancers</li>
+                                                    <li><em>Agilidade</em> na Busca de Trabalho</li>
+                                                    <li><em>Colaboração </em> Remota Simplificada</li>
+                                                    <li><em>Interface</em> Intuitiva</li>
+                                                    <li><em>Chat</em> Exclusivo com o Prestador </li>
+                                                    <li>Suporte <em>24 Horas </em></li>
+                                                </ul>
+                                            </div>
+                                            <footer class="pricing-footer">
+                                                <a class="select" href="cart.html">Contratar</a>
+                                            </footer>
+                                        </li>
+                                        <li data-type="yearly" class="is-hidden">
+                                            <header class="pricing-header">
+                                                <h2>On Black</h2>
+                                                <div class="price">
+                                                    <span class="currency">R$</span>
+                                                    <span class="value">200</span>
+                                                    <span class="duration">Ano</span>
+                                                </div>
+                                            </header>
+                                            <div class="pricing-body">
+                                                <ul class="pricing-features">
+                                                    <li><em>Filtragem</em> Personalizada</li>
+                                                    <li><em>Variedade</em> de Projetos</li>
+                                                    <li><em>Oportunidade</em> para Freelancers</li>
+                                                    <li><em>Agilidade</em> na Busca de Trabalho</li>
+                                                    <li><em>Colaboração </em> Remota Simplificada</li>
+                                                    <li><em>Interface</em> Intuitiva</li>
+                                                    <li>Suporte <em>24 Horas </em></li>
+                                                </ul>
+                                            </div>
+                                            <footer class="pricing-footer">
+                                                <a class="select" href="cart.html">Contratar</a>
+                                            </footer>
+                                        </li>
+                                    </ul>
                                 </li>
                             </ul>
-                            <button>Escolher Plano</button>
-                        </article>
-                        <article class="card primary">
-                            <h2>Elite</h2>
-                            <var><abbr>R$</abbr>99<small>/MÊS</small></var>
-                            <ul>
-                                <li>
-                                    <img src="assets/fonts/check.svg" />
-                                    <p>10 solicitações de usuário</p>
-                                </li>
-                                <li>
-                                    <img src="assets/fonts/check.svg" />
-                                    <p>3 contas de design</p>
-                                </li>
-                                <li>
-                                    <img src="assets/fonts/check.svg" />
-                                    <p>Suporte por e-mail</p>
-                                </li>
-                                <li>
-                                    <img src="assets/fonts/check.svg" />
-                                    <p>100 implantações</p>
-                                </li>
-                                <li>
-                                    <img src="assets/fonts/check.svg" />
-                                    <p>Suporte 24/7</p>
-                                </li>
-                            </ul>
-                            <button class="primary">Escolher Plano</button>
-                        </article>
-                        <article class="card">
-                            <h2>Pro</h2>
-                            <var><abbr>R$</abbr>49<small>/MÊS</small></var>
-                            <ul>
-                                <li>
-                                    <img src="assets/fonts/check.svg" />
-                                    <p>10 solicitações de usuário</p>
-                                </li>
-                                <li>
-                                    <img src="assets/fonts/check.svg" />
-                                    <p>3 contas de design</p>
-                                </li>
-                                <li>
-                                    <img src="assets/fonts/check.svg" />
-                                    <p>Suporte por e-mail</p>
-                                </li>
-                            </ul>
-                            <button>Escolher Plano</button>
-                        </article>
-                    </div>
-                </div>
-            </div>
-            
+                        </div>
 
 		</div>
 
@@ -312,7 +403,15 @@
 </footer><!-- End footer -->
 
 	</main><!-- End main -->
-
+    <script src="https://kit.fontawesome.com/95a02bd20d.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
+    <script src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js'></script>
+    <script src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js'></script>
+      <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script><script  src="assets/js/script-plans.js"></script>
 <script src="assets/libs/jquery/jquery.min.js"></script>
 <script src="assets/libs/lozad/lozad.min.js"></script>
 <script src="assets/libs/device/device.js"></script>
