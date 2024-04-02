@@ -88,12 +88,13 @@ form {
 form.sign-up-form {
   opacity: 0;
   z-index: 1;
+  left: 80%;
 }
 
 
 form.sign-in-form {
   z-index: 2;
-  left: 70%;
+  left: 80%;
 }
 
 .title {
