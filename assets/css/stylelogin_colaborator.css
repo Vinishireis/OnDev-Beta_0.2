@@ -21,6 +21,7 @@ input {
 
 .container-colaborator {
   position: relative;
+  left: 80%;
   width: 100%;
   background-color: #fff;
   min-height: 80vh; /* Reduzi a altura para 80vh para deixar espaço para a barra de rolagem */
