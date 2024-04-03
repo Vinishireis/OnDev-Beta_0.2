@@ -11,7 +11,7 @@
 
   --text: #272727;
 
-  --accent: #5057fd;
+  --accent: #2229a9;
 
   --accent-3: #7276eb;
 
@@ -180,7 +180,7 @@ hr {
   content: "$";
 }
 
-.btn {
+.btn-cards {
   display: inline-flex;
 
   align-items: center;
@@ -208,12 +208,6 @@ hr {
   background: var(--primary);
 
   color: var(--accent);
-}
-
-.bg__accent-3{
-  background: var(--primary);
-
-  color: var(--accent-3);
 }
 
 .btn:hover {
