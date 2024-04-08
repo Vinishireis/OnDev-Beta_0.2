@@ -16,16 +16,16 @@ input {
   width: 100%;
   min-height: 100vh;
   overflow: hidden;
-  z-index: 2; /* Ajustado o valor do z-index */
+  z-index: 1; /* Definido o z-index do container */
 }
 
 .container-colaborator {
   position: relative;
   width: 100%;
-  min-height: 100vh; /* Reduzi a altura para 80vh para deixar espaço para a barra de rolagem */
-  overflow-y: auto; /* Alterado para 'auto' para mostrar a barra de rolagem apenas quando necessário */
+  min-height: 100vh;
+  overflow-y: auto;
   overflow-x: hidden;
-  z-index: 1; /* Ajustado o valor do z-index */
+  z-index: 2;
 }
 
 .forms-container {
@@ -35,7 +35,6 @@ input {
   top: 5%;
   left: 0;
   overflow-y: hidden;
-  z-index: 3; /* Ajustado o valor do z-index */
 }
 
 .forms-container-colaborator {
@@ -44,31 +43,30 @@ input {
   height: 100%;
   top: 0;
   left: 0;
-  min-height: 80vh; /* Reduzi a altura para 80vh para deixar espaço para a barra de rolagem */
-  overflow-y: auto; /* Alterado para 'auto' para mostrar a barra de rolagem apenas quando necessário */
+  min-height: 80vh;
+  overflow-y: auto;
   overflow-x: hidden;
-  z-index: 2; /* Ajustado o valor do z-index */
 }
 
 .signin-signup {
   position: relative;
   overflow-x: hidden;
-  left: 25%; /* Valor negativo maior para mover mais para a esquerda */
+  left: 25%;
   transition: 1s 0.7s ease-in-out;
   display: grid;
   grid-template-columns: 1fr;
-  z-index: 2; /* Ajustado o valor do z-index */
+  z-index: 5; /* Ajustado um z-index maior para o signin-signup */
 }
 
 .signin-signup-colaborator {
   position: relative;
   overflow-x: hidden;
-  right: 20%; /* Valor negativo maior para mover mais para a esquerda */
+  right: 20%;
   align-items: center;
   transition: 1s 0.7s ease-in-out;
   display: grid;
   grid-template-columns: 1fr;
-  z-index: 6; /* Ajustado o valor do z-index */
+  z-index: 5; /* Ajustado um z-index ainda maior para o signin-signup-colaborator */
 }
 
 form {
@@ -85,15 +83,13 @@ form {
 
 form.sign-up-form {
   opacity: 0;
-  z-index: 3; /* Ajustado o valor do z-index */
+  z-index: 1; /* Ajustado um z-index ainda maior para o sign-up-form */
 }
 
 form.sign-in-form {
-  z-index: 2; /* Ajustado o valor do z-index */
-  opacity: 1;
+  z-index: 2; /* Ajustado um z-index ainda maior para o sign-in-form */
   overflow-y: scroll;
 }
-
 
 .title {
   font-size: 2.2rem;
