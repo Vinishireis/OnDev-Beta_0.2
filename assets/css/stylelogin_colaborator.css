@@ -60,7 +60,7 @@ input {
   position: absolute;
   top: 70%;
   transform: translate(-50%, -50%);
-  left: 35%;
+  left: 40%;
   width: 100%;
   transition: 1s 0.7s ease-in-out;
   display: grid;
