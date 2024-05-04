@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -8,7 +9,6 @@
 
 <!--=============== REMIXICONS ===============-->
 <meta name='robots' content='max-image-preview:large'/>
-<script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
    <link rel="alternate" type="application/rss+xml" title="Make Dream Website &raquo; Feed" href="https://template.makedreamwebsite.com/feed/"/>
    <link rel="alternate" type="application/rss+xml" title="Make Dream Website &raquo; Comments Feed" href="https://template.makedreamwebsite.com/comments/feed/"/>
    <link rel="shortcut icon" href="assets/img/logo-oficial.png" type="image/x-icon" />
@@ -21,153 +21,199 @@
    <link rel="preload" href="assets/fonts/material-icons/material-icons.woff2" as="font" type="font/woff2" crossorigin>
    <link rel="preload" href="assets/fonts/material-icons/material-icons-outlined.woff2" as="font" type="font/woff2" crossorigin>
 
+
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
    <!--=============== CSS ===============-->
-  <link rel="stylesheet" href="assets/css/stylelogin_colaborator.css">
+  <link rel="stylesheet" href="assets/css/stylelogin_colaborator_juridico.css">
 
-    
-
-    <title>Formulário de Login e Cadastro</title>
-  </head>
-  <body>
-    <div class="container">
+     <div class="container-full">
       <div class="forms-container">
         <div class="signin-signup">
-          <form action="#" class="sign-in-form">
-            <h2 class="title">Colaborador Jurídico</h2>
-            <div class="input-field">
-              <i class="fas fa-user"></i>
-              <input type="text" placeholder="Email" />
-            </div>
-            <div class="input-field">
-              <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Senha" />
-            </div>
-            <input type="submit" value="Login" class="btn solid" />
-            <p class="social-text">Ou entre com as plataformas sociais</p>
-            <div class="social-media">
-              <a href="#" class="social-icon">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-google"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-            </div>
-          </form>
-        </div>
-     </div>
-           <div class="container-colaborator">
-            <div class="forms-container-colaborator">
-              <div class="signin-signup-colaborator">
-                <form action="#" class="sign-up-form">
-                <h2 class="title">Cadastre-se</h2>
-            <div class="input-field">
-              <i class="fas fa-user"></i>
-              <input type="text" name="Razao_social" placeholder="Razão social" id="Razao_social" required/>
-            </div>
-            <div class="input-field">
-                <i class="fas fa-list-numeric"></i>
-                <input type="number" name="CNPJ" placeholder="CNPJ" id="CNPJ" required />
-            </div>
-            <div class="input-field">
-              <i class="fas fa-calendar"></i>
-              <input type="text" name="Inscricao_estadual" placeholder="Inscrição estadual" id="Inscricao_estadual" required />
-            </div>
-            <div class="input-field">
-                <i class="fas fa-map-location"></i>
-                <input type="number" name="CEP" placeholder="CEP" id="CEP" required/>
-            </div>
-            <div class="input-field">
-                <i class="fas fa-map-location"></i>
-                <input type="text" name="Rua" placeholder="Logradouro" id="Rua" required/>
-            </div>
-            <div class="input-field">
-                <i class="fas fa-map-location"></i>
-                <input type="number" name="Numero" placeholder="Número" id="Numero" required/>
-            </div>
-            <div class="input-field">
-                <i class="fas fa-map-location"></i>
-                <input type="text" name="Complemento" placeholder="Complemento" id="Complemento" required/>
-            </div>
-            <div class="input-field">
-                <i class="fas fa-map-location"></i>
-                <input type="text" name="Bairro" placeholder="Bairro" id="Bairro" required/>
-            </div>
-            <div class="input-field">
-                <i class="fas fa-map-location"></i>
-                <input type="text" name="Cidade" placeholder="Cidade" id="Cidade" required/>
-            </div>
-            <div class="input-field">
-                <i class="fas fa-map-location"></i>
-                <input type="text" name="UF" placeholder="Estado" id="UF" required/>
-            </div>
-            <div class="input-field">
-                <i class="fas fa-envelope"></i>
-                <input type="text" name="Email" placeholder="E-mail" id="Email" required/>
-            </div>
-            <div class="input-field">
-              <i class="fas fa-lock"></i>
-              <input type="password" name="Senha" placeholder="Senha" id="Senha" required/>
-            </div>
-            <div class="input-field">
-                <i class="fas fa-lock"></i>
-                <input type="check-password" name="Senha" placeholder="Repita sua senha" id="check-senha" required/>
+          <form action="#" class="sign-up-form">
+      <header>Cadastre-se</header>
+
+      <form action="#">
+          <div class="form first">
+              <div class="details personal">
+                  <span class="title">Detalhes Pessoais</span>
+
+                  <div class="fields">
+                      <div class="input-field">
+                          <label>Nome Completo</label>
+                          <input type="text" placeholder="Insira o seu nome" required>
+                      </div>
+
+                      <div class="input-field">
+                          <label>Data de Nascimento</label>
+                          <input type="date" placeholder="Insira a data de nascimento" required>
+                      </div>
+
+                      <div class="input-field">
+                          <label>Email</label>
+                          <input type="text" placeholder="Insira o seu Email" required>
+                      </div>
+
+                      <div class="input-field">
+                          <label>Número de Celular</label>
+                          <input type="number" placeholder="Insira o número de celular" required>
+                      </div>
+
+                      <div class="input-field">
+                          <label>Gênero</label>
+                          <select required>
+                              <option disabled selected>Selecione o gênero</option>
+                              <option>Masculino</option>
+                              <option>Feminino</option>
+                              <option>Outros</option>
+                          </select>
+                      </div>
+
+                      <div class="input-field">
+                          <label>Ocupação</label>
+                          <input type="text" placeholder="Insira a sua ocupação" required>
+                      </div>
+                  </div>
               </div>
-            <div class="input-field">
-                <i class="fas fa-phone"></i>
-                <input type="number" name="DDD" placeholder="DDD" id="DDD" required/>
-            </div>
-            <div class="input-field">
-                <i class="fas fa-phone"></i>
-                <input type="number" name="Telefone" placeholder="Telefone" id="Telefone" required/>
-            </div>
-            <input type="submit" class="btn" value="Cadastrar" />  
-          </form>
-        </div>
-      </div>
-    </div>
 
-      <div class="panels-container">
-        <div class="panel left-panel">
-          <div class="content">
-            <h3>Novo por aqui?</h3>
-            <p>
-              Venha fazer parte da OnDev
-            </p>
-            <button class="btn transparent" id="sign-up-btn">
-              Cadastre-se
-            </button>
+              <div class="details ID">
+                  <span class="title">Detalhes de Identidade</span>
+
+                  <div class="fields">
+                      <div class="input-field">
+                          <label>Tipo de Identidade</label>
+                          <input type="text" placeholder="Insira o tipo de identidade" required>
+                      </div>
+
+                      <div class="input-field">
+                          <label>Número de Identidade</label>
+                          <input type="number" placeholder="Insira o número de identidade" required>
+                      </div>
+
+                      <div class="input-field">
+                          <label>Autoridade Emitente</label>
+                          <input type="text" placeholder="Insira a autoridade emitente" required>
+                      </div>
+
+                      <div class="input-field">
+                          <label>Estado de Emissão</label>
+                          <input type="text" placeholder="Insira o estado de emissão" required>
+                      </div>
+
+                      <div class="input-field">
+                          <label>Data de Emissão</label>
+                          <input type="date" placeholder="Insira a data de emissão" required>
+                      </div>
+
+                      <div class="input-field">
+                          <label>Data de Expiração</label>
+                          <input type="date" placeholder="Insira a data de expiração" required>
+                      </div>
+                  </div>
+
+                  <button class="nextBtn">
+                      <span class="btnText">Próximo</span>
+                      <i class="uil uil-navigator"></i>
+                  </button>
+              </div> 
           </div>
-          <img src="assets/img/log.svg" class="image" alt="" />
-        </div>
-        <div class="panel right-panel">
-          <div class="content">
-            <h3>Já é um de nós?</h3>
-            <p>
-              Faça Login na sua conta
-            </p>
-            <button class="btn transparent" id="sign-in-btn">
-              Entrar
-            </button>
+
+          <div class="form second">
+              <div class="details address">
+                  <span class="title">Detalhes de Endereço</span>
+
+                  <div class="fields">
+                      <div class="input-field">
+                          <label>Tipo de Endereço</label>
+                          <input type="text" placeholder="Permanente ou Temporário" required>
+                      </div>
+
+                      <div class="input-field">
+                          <label>Nacionalidade</label>
+                          <input type="text" placeholder="Insira a nacionalidade" required>
+                      </div>
+
+                      <div class="input-field">
+                          <label>Estado</label>
+                          <input type="text" placeholder="Insira o estado" required>
+                      </div>
+
+                      <div class="input-field">
+                          <label>Distrito</label>
+                          <input type="text" placeholder="Insira o distrito" required>
+                      </div>
+
+                      <div class="input-field">
+                          <label>Número do Bloco</label>
+                          <input type="number" placeholder="Insira o número do bloco" required>
+                      </div>
+
+                      <div class="input-field">
+                          <label>Número do Distrito</label>
+                          <input type="number" placeholder="Insira o número do distrito" required>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="details family">
+                  <span class="title">Detalhes da Família</span>
+
+                  <div class="fields">
+                      <div class="input-field">
+                          <label>Nome do Pai</label>
+                          <input type="text" placeholder="Insira o nome do pai" required>
+                      </div>
+
+                      <div class="input-field">
+                          <label>Nome da Mãe</label>
+                          <input type="text" placeholder="Insira o nome da mãe" required>
+                      </div>
+
+                      <div class="input-field">
+                          <label>Avô</label>
+                          <input type="text" placeholder="Insira o nome do avô" required>
+                      </div>
+
+                      <div class="input-field">
+                          <label>Nome do Cônjuge</label>
+                          <input type="text" placeholder="Insira o nome do cônjuge" required>
+                      </div>
+
+                      <div class="input-field">
+                          <label>Pai do Cônjuge</label>
+                          <input type="text" placeholder="Insira o nome do pai do cônjuge" required>
+                      </div>
+
+                      <div class="input-field">
+                          <label>Mãe do Cônjuge</label>
+                          <input type="text" placeholder="Insira o nome da mãe do cônjuge" required>
+                      </div>
+                  </div>
+
+                  <div class="buttons">
+                      <div class="backBtn">
+                          <i class="uil uil-navigator"></i>
+                          <span class="btnText">Voltar</span>
+                      </div>
+                      
+                      <button class="sumbit">
+                          <span class="btnText">Enviar</span>
+                          <i class="uil uil-navigator"></i>
+                      </button>
+                  </div>
+              </div> 
           </div>
-          <img src="assets/img/register.svg" class="image" alt="" />
-        </div>
-      </div>
-    </div>
+      </form>
+  </div>
 
 
-<script src="assets/libs/jquery/jquery.min.js"></script>
 <script src="assets/libs/lozad/lozad.min.js"></script>
 <script src="assets/libs/device/device.js"></script>
 <script src="assets/libs/spincrement/jquery.spincrement.min.js"></script>
 <script src="assets/libs/pristine/pristine.min.js"></script>
 <script src="assets/js/custom.js"></script>
 <script src="assets/js/forms.js"></script>
-<script src="assets/js/login.js"></script>
+
   </body>
 </html>
